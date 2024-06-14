@@ -20,12 +20,13 @@ change-template: "- $TITLE (#$NUMBER) by @$AUTHOR"
 template: |
   ## What's new in v$NEXT_PATCH_VERSION
 
-  ### Release Date
-  ${TIME}
-
-  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+  ## Release Date
+  $DATE
 
   $CHANGES
+
+  ## Changelog
+  https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
   ## Contributors
   Thank you to all the contributors who made this release possible:
